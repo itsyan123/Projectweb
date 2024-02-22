@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="confirmed.css">
+</head>
+<body>
+
+    <!-- This is where the booking details will be displayed -->
+    <div id="booking-details">
+        <!-- Details will be displayed here -->
+    </div>
+
+    <script>
+        // Function to retrieve query parameters from URL
+        function getQueryVariable(variable) {
+            const query = window.location.search.substring(1);
+            const vars = query.split('&');
+            for (let i = 0; i < vars.length; i++) {
+                const pair = vars[i].split('=');
+                if (decodeURIComponent(pair[0]) === variable) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+            console.error('Query variable %s not found', variable);
+        }
+
+        // Function to display booking details
+        function displayBookingDetails() {
+            const package = getQueryVariable('package');
+            const howMany = getQueryVariable('how_many');
+            const arrivalDate = getQueryVariable('arrival_date');
+            const departureDate = getQueryVariable('departure_date');
+            const name = getQueryVariable('name');
+            const email = getQueryVariable('email');
+            const telephone = getQueryVariable('telephone');
+
+            const bookingDetailsDiv = document.getElementById('booking-details');
+            bookingDetailsDiv.innerHTML = `
+                <h1>Booking Confirmation</h1>
+                <p>You have booked <strong>${package}</strong>.</p>
+            <h2>Details:</h2>
+                <ul>
+                    <li>Number of people: ${howMany}</li>
+                    <li>Arrival Date: ${arrivalDate}</li>
+                    <li>Departure Date: ${departureDate}</li>
+                    <li>Name: ${name}</li>
+                    <li>Email: ${email}</li>
+                    <li>Telephone Number: ${telephone}</li>
+                </ul>
+            `;
+        }
+
+        // Call the function to display booking details when the page loads
+        displayBookingDetails();
+    </script>
+
+</body>
+</html>
+

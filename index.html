@@ -1,0 +1,557 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="T-icon" href="image/airplane.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourPh</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Link -->
+
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+  </head>
+
+  <body>
+    <!--this is  Navbar  -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" id="logo"><span>T</span>ourPh</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#packages">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#packages">Packages</a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+             
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar-->
+
+
+
+
+
+    <!-- This is Home -->
+    <div class="home">
+        <div class="content">
+            <h5>Welcome To Philippines</h5>
+            <h1>Visit <span class="changecontent"></span></h1>
+            <p>Where there is more fun and adventure.</p>
+            <a href="#book">Book Place</a>
+        </div>
+    </div>
+    <!-- Home -->
+
+
+    <!-- This is Packages  -->
+    <section class="packages" id="packages">
+      <div class="container">
+        
+        <div class="main-txt">
+          <h1><span>P</span>ackages</h1>
+        </div>
+
+        <div class="row" style="margin-top: auto; margin-bottom: auto;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="image/palawan.webp" alt="">
+              <div class="card-body">
+                <h3>Palawan</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>4,300</strong></h6>
+                <button class="read-more-btn" data-package-id="palawan">Read More</button>
+                <div id="palawan-details" style="display: none;">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ducimus quo molestias doloremque iure nam possimus quisquam impedit vero amet. Libero necessitatibus error temporibus beatae corrupti facilis nostrum architecto earum?</p>
+                </div>
+                <a href="books/palawan.html" id="palawan-book" >Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="image/baguio.jpg" alt="">
+              <div class="card-body">
+                <h3>Baguio City</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>3,999</strong></h6>
+                <button class="read-more-btn" data-package-id="Baguio">Read More</button>
+                <div id="Baguio-details" style="display: none;">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ducimus quo molestias doloremque iure nam possimus quisquam impedit vero amet. Libero necessitatibus error temporibus beatae corrupti facilis nostrum architecto earum?</p>
+                </div>
+                <a href="books.html" id="Baguio-book" >Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="image/lake.jpg" alt="">
+              <div class="card-body">
+                <h3>Lake Sebu, South Cotabato</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>12,345</strong></h6>
+                <button class="read-more-btn" data-package-id="Lake">Read More</button>
+                <div id="Lake-details" style="display: none;">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ducimus quo molestias doloremque iure nam possimus quisquam impedit vero amet. Libero necessitatibus error temporibus beatae corrupti facilis nostrum architecto earum?</p>
+                </div>
+                <a href="books.html" id="lake-book" >Book Now</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="image/vanishing.jpeg" alt="">
+              <div class="card-body">
+                <h3>Vanishing Island, Samal Davao</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price:3,899 <strong></strong></h6>
+                <button class="read-more-btn" data-package-id="Vanish">Read More</button>
+                <div id="Vanish-details" style="display: none;">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ducimus quo molestias doloremque iure nam possimus quisquam impedit vero amet. Libero necessitatibus error temporibus beatae corrupti facilis nostrum architecto earum?</p>
+                </div>
+               
+                <a href="books.html" id="vanishing-book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="image/hundred.jpg" alt="">
+              <div class="card-body">
+                <h3>Hundred Islands, Alaminos Pangasinan</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price:<strong>5,999 </strong></h6>
+                <button class="read-more-btn" data-package-id="Hundreds">Read More</button>
+                <div id="Hundreds-details" style="display: none;">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ducimus quo molestias doloremque iure nam possimus quisquam impedit vero amet. Libero necessitatibus error temporibus beatae corrupti facilis nostrum architecto earum?</p>
+                </div>
+                <a href="books.html" id="hundred-book" >Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="image/capones.jpg" alt="">
+              <div class="card-body">
+                <h3>Capones Islands</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price:<strong>6,000 </strong></h6>
+                <button class="read-more-btn" data-package-id="capone">Read More</button>
+                <div id="capone-details" style="display: none;">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ducimus quo molestias doloremque iure nam possimus quisquam impedit vero amet. Libero necessitatibus error temporibus beatae corrupti facilis nostrum architecto earum?</p>
+                </div>
+                <a href="books.html" id="capones-book" >Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="image/badian islands.jpg" alt="">
+              <div class="card-body">
+                <h3>Zaragosa Island, Cebu</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price:<strong>4,999 </strong></h6>
+                <button class="read-more-btn" data-package-id="Zaragosa">Read More</button>
+                <div id="Zaragosa-details" style="display: none;">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ducimus </p>
+                </div>
+                <a href="books.html" id="badian-book" >Book Now</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="image/bohol.jpg" alt="">
+              <div class="card-body">
+                <h3>Bohol</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price:<strong>4,350 </strong></h6> 
+                <button class="read-more-btn" data-package-id="Bohol">Read More</button>
+                <div id="Bohol-details" style="display: none;">
+                  <p> doloremque iure nam possimus quisquam impedit vero amet. Libero necessitatibus error temporibus beatae corrupti facilis nostrum architecto earum?</p>
+                </div>
+                <a href="books.html" id="bohol-book" >Book Now</a>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="image/mayon.jpg" alt="">
+              <div class="card-body">
+                <h3>Mayon</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price:<strong>1,234 </strong></h6>
+                <button class="read-more-btn" data-package-id="mayon">Read More</button>
+                <div id="mayon-details" style="display: none;">
+                  <p>Lorem ipsum dolor sit amet consectetu quisquam impedit vero amet. Libero necessitatibus error temporibus beatae corrupti facilis nostrum architecto earum?</p>
+                </div>
+                <a href="books.html" id="mayon-book" >Book Now</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </section>
+    <!-- Packages -->
+
+
+
+
+
+
+
+    <!-- This is Services -->
+    <section class="services" id="services">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1><span>S</span>ervices</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-hotel"></i>
+              <div class="card-body">
+                <h3>Affordable Hotel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-utensils"></i>
+              <div class="card-body">
+                <h3>Food & Drinks</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-bullhorn"></i>
+              <div class="card-body">
+                <h3>Safety Guide</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-Flag"></i>
+              <div class="card-body">
+                <h3>Around The Country</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-plane"></i>
+              <div class="card-body">
+                <h3>Fastest Travel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-hiking"></i>
+              <div class="card-body">
+                <h3>Adventures</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Services -->
+
+
+
+
+    <!-- This is Gallery -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1><span>G</span>allery</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="image/palawan1.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="image/100.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="image/lakesebu.jpg" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="image/z.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="image/samal.jpeg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="image/vanishing.jpeg" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--Gallery-->
+
+
+
+
+
+
+
+    <!--This is About-->
+    <section class="about" id="about">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1>About <span>Us</span></h1>
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="image/about-img.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <h2>How Travel Agency Work</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perferendis dolorem, numquam earum at nam beatae voluptate natus consectetur facere, saepe cupiditate ut exercitationem deserunt, facilis quam perspiciatis autem iure illo harum minima. Quas, vitae aperiam laudantium alias asperiores nulla rerum, nihil eveniet perferendis sint illum accusamus officiis aliquam nam.</p>
+            <button id="about-btn">Read More...</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!--About-->
+
+
+
+
+
+
+
+
+    <!--This is Footer-->
+    <footer id="footer">
+      <h1><span>T</span>ours Ph</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fugiat, ipsa quos nulla qui alias.</p>
+      <div class="social-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </div>
+      <div class="credit">
+        <p>Designed By <a href="#"></a></p>
+      </div>
+      <div class="copyright">
+        <p>&copy; All Rights Reserved</p>
+      </div>
+    </footer>
+    <!--Footer-->
+
+
+
+
+
+
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="file.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Package</title>
+    <link rel="stylesheet" href="books.css">
+</head>
+<body>
+    <img src="../image/palawan1.jpg">
+
+    <section class="book" id="book">
+        <div class="container">
+            <h2 id="package-name">Palawan</h2>
+            <form action="confirmed.html" method="get"> <!-- Change the action to confirmed.html -->
+                <input type="hidden" name="package" value="Palawan"> <!-- Hidden input to pass the package name -->
+                <input type="text" name="how_many" class="form-control" placeholder="How Many" required><br>
+                <input type="date" name="arrival_date" class="form-control" placeholder="Arrival Date" required><br>
+                <input type="date" name="departure_date" class="form-control" placeholder="Departure Date" required><br>
+                <input type="text" name="name" class="form-control" placeholder="Name" required><br>
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required><br>
+                <input type="tel" name="telephone" class="form-control" placeholder="Telephone Number" required><br>
+                <input type="submit" value="Book Now" class="submit" required>
+            </form>
+        </div>
+    </section>
+
+    <script src="books.js"></script>
+</body>
+</html>
